@@ -1,4 +1,4 @@
-import 'package:expensetracker/ui/dash/dash.dart';
+import 'package:expensetracker/ui/screens/dash/dash.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
