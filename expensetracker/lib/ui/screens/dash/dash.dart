@@ -1,5 +1,4 @@
-import 'package:expensetracker/ui/models/chart.dart';
-import 'package:expensetracker/ui/widgets/charts/pie.dart';
+import 'package:expensetracker/ui/widgets/custom_bottom_navbar.dart';
 import 'package:flutter/material.dart';
 
 class Dash extends StatelessWidget {
@@ -8,12 +7,11 @@ class Dash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: CustomAnimatedPieChart(chartDataSet: [
-          ChartDataSet(color: Colors.black, label: 'test1', value: 100),
-          ChartDataSet(color: Colors.blue, label: 'test2', value: 200),
-          ChartDataSet(color: Colors.red, label: 'test3', value: 200),
-        ]),
+      body: Column(
+        children: [
+          Expanded(child: SizedBox()),
+          CustomBottomNavBar(),
+        ],
       ),
     );
   }
